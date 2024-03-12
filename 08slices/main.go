@@ -33,12 +33,22 @@ func main()  {
 
 	highScores = append(highScores, 344,675,876,345) //entire memort allocation happens again
 
-	fmt.Println(highScores)
+	// fmt.Println(highScores)
 
 	fmt.Println(sort.IntsAreSorted(highScores))
 
 	sort.Ints(highScores)
-	fmt.Println(highScores)
+	// fmt.Println(highScores)
+
+	//remove value from slices based on indices
+
+	var courses = []string{"reactjs","nodejs","python","java"}
+	fmt.Println("Before removing : ",courses)
+
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)   //removing the element at index 'index
+	fmt.Println("After removing : ",courses)
+
 
 
 }
