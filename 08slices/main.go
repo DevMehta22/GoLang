@@ -31,7 +31,7 @@ func main()  {
 	highScores[3] = 643
 	// highScores[4] = 923 // gives index out of range error
 
-	highScores = append(highScores, 344,675,876,345) //entire memort allocation happens again
+	highScores = append(highScores, 344,675,876,345) //entire memory allocation happens again
 
 	// fmt.Println(highScores)
 
